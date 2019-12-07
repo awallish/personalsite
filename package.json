@@ -1,0 +1,26 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Alex Wallish's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awallish/personalsite.git"
+  },
+  "author": "Alex Wallish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awallish/personalsite/issues"
+  },
+  "homepage": "https://github.com/awallish/personalsite#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "morgan": "^1.9.1"
+  }
+}

@@ -6,3 +6,38 @@ a.nav-elem:link { color:#FFF; text-decoration:none; font-weight:normal; }
 a.nav-elem:visited { color: #FFF; text-decoration:none; font-weight:normal; }
 a.nav-elem:hover { color: #FFF; text-decoration:none; font-weight:normal; }
 a.nav-elem:active { color: #FFF; text-decoration:none; font-weight:normal; }
+
+body {background-color: #f8ffd6;}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+    margin-right: 2%;
+    margin-left: 10%;
+}
+.separator::after {
+    margin-left: 2%;
+    margin-right: 10%;
+}
+
+#main-content {
+    height: 75vh;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+ }

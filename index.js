@@ -17,7 +17,7 @@ app.use("/public", express.static("public"));
 
 
 app.get("/", function(req, res) {
-    res.send("hello world!");
+    res.render("home");
 })
 
 

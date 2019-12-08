@@ -34,7 +34,7 @@ body {background-color: #f8ffd6;}
 
 
 .footer {
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;

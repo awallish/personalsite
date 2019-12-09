@@ -3,16 +3,15 @@
     z-index: 1;
 }
 
-a.nav-elem:link { color:#FFF; text-decoration:none; font-weight:normal; }
-a.nav-elem:visited { color: #FFF; text-decoration:none; font-weight:normal; }
-a.nav-elem:hover { color: #FFF; text-decoration:none; font-weight:normal; }
-a.nav-elem:active { color: #FFF; text-decoration:none; font-weight:normal; }
+.nav-elem {
+    font-family: monospace;
+    font-size: 20px;
+}
 
-a.foot-link:link { color:#297bff; text-decoration:none; font-weight:normal; }
-a.foot-link:visited { color: #297bff; text-decoration:none; font-weight:normal; }
-a.foot-link:hover { color: #297bff; text-decoration:none; font-weight:normal; }
-a.foot-link:active { color: #297bff; text-decoration:none; font-weight:normal; }
-
+a.nav-elem:link { color:#297bff; text-decoration:none; font-weight:normal; }
+a.nav-elem:visited { color: #297bff; text-decoration:none; font-weight:normal; }
+a.nav-elem:hover { color: #297bff; text-decoration:none; font-weight:bold; }
+a.nav-elem:active { color: #297bff; text-decoration:none; font-weight:normal; }
 
 body {background-color: #000000;}
 

@@ -74,3 +74,19 @@ body {background-color: #000000;}
     content: "";
     background-color: rgba(0,0,0,0);
 }
+
+/* work styling */
+a.page-link:link {
+    color: white;
+    float: right;
+}
+.my-card {
+    border: thin;
+    border-color: #297bff;
+    border-width: 2px;
+    border-style: ridge;
+    border-radius: 10px;
+}
+.my-card img{
+    align
+}

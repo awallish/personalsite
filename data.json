@@ -1,31 +1,31 @@
 {
     "events": [
         {
-            "timestamp": 111118,
+            "timestamp": 111119,
             "title": "Joined Belvedere Trading",
             "type": "Job",
             "href": "/work",
-            "thumbnail": "/public/css/images/belvedere-logo.png"
+            "thumbnail": "/public/css/images/600x400.png"
         },
         {
-            "timestamp": 111114,
+            "timestamp": 111118,
             "title": "A Data Driven Approach to VC",
             "type": "Writing",
             "href": "awallish.github.io",
             "thumbnail": "/public/css/images/600x400.png"
         },
         {
-            "timestamp": 111116,
+            "timestamp": 111117,
             "title": "Tech Internship EDA",
             "type": "Writing",
             "href": "/writing/tech-internship-eda",
             "thumbnail": "/public/css/images/600x400.png"
         },
         {
-            "timestamp": 111119,
+            "timestamp": 111116,
             "title": "techinternship.io",
             "type": "Project",
-            "href": "www.techinternship.io",
+            "href": "https://www.techinternship.io",
             "thumbnail": "/public/css/images/600x400.png"
         }
     ]

@@ -8,6 +8,8 @@
     font-size: 20px;
 }
 
+a.non-underline:hover { text-decoration: none;}
+
 a.nav-elem:link { color:#297bff; text-decoration:none; font-weight:normal; }
 a.nav-elem:visited { color: #297bff; text-decoration:none; font-weight:normal; }
 a.nav-elem:hover { color: #297bff; text-decoration:none; font-weight:bold; }

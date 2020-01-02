@@ -28,9 +28,7 @@ app.get("/work", function(req, res) {
 })
 
 app.get("/projects", function(req, res) {
-    res.render("projects", {
-        data: dataUtil.projects()
-    });
+    res.render("projects");
 })
 
 app.get("/writing", function(req, res) {

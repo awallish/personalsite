@@ -17,7 +17,14 @@
             <img src={{this.thumbnail}} class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{this.title}}</h5>
-                <p class="card-text">{{this.type}}</p>
+                <div class="row">
+                    <div class="col">
+                        <p class="card-text">{{this.type}}</p>
+                    </div>
+                    <div class="col">
+                        <p class="card-text text-right">{{this.date}}</p>
+                    </div>
+                </div>
                 <a href={{this.href}} class="stretched-link"></a>
             </div>
         </div>

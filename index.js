@@ -33,7 +33,7 @@ app.get("/projects", function(req, res) {
 
 app.get("/writing", function(req, res) {
     res.render("writing", {
-        data: dataUtil.writings()
+        data: dataUtil.allData()
     });
 })
 

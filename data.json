@@ -5,28 +5,36 @@
             "title": "Joined Belvedere Trading",
             "type": "Job",
             "href": "/work",
-            "thumbnail": "/public/css/images/600x400.png"
+            "thumbnail": "/public/css/images/belvedere-logo-600x400.png",
+            "date": "Jan 2020",
+            "preview": "lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text."
         },
         {
             "timestamp": 111118,
             "title": "A Data Driven Approach to VC",
             "type": "Writing",
             "href": "https://awallish.github.io",
-            "thumbnail": "/public/css/images/600x400.png"
+            "thumbnail": "/public/css/images/600x400.png",
+            "date": "Dec 2020",
+            "preview": "lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text."
         },
         {
             "timestamp": 111117,
             "title": "Tech Internship EDA",
             "type": "Writing",
             "href": "/writing/tech-internship-eda",
-            "thumbnail": "/public/css/images/600x400.png"
+            "thumbnail": "/public/css/images/600x400.png",
+            "date": "Nov 2020",
+            "preview": "lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text."
         },
         {
             "timestamp": 111116,
-            "title": "techinternship.io",
+            "title": "Introducing techinternship.io",
             "type": "Project",
             "href": "https://www.techinternship.io",
-            "thumbnail": "/public/css/images/600x400.png"
+            "thumbnail": "/public/css/images/600x400.png",
+            "date": "Aug 2020",
+            "preview": "lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text. lots of preview text."
         }
     ]
 }

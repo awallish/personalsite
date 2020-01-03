@@ -1,1 +1,31 @@
-writing
+<div class="container">
+    <br>
+    {{# each data}}
+
+    <a class="non-underline" href={{this.href}} target="_blank">
+        <div id={{this.title}}>
+            <div class="my-card">
+                <div class="row">
+                    <div class="col pl-5">
+                        <div class="row">
+                            <div class="col-9">
+                                <h1 class="blue-text py-3">{{this.title}}</h1>
+                            </div>
+                            <div class="col">
+                                <h4 class="blue-text py-3">{{this.date}}</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="blue-text">{{this.preview}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <br>
+    <br>
+    {{/each}}
+</div>

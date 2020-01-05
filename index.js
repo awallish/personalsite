@@ -6,7 +6,6 @@ const handlebars = exphbs.handlebars;
 const app = express();
 const http = require("http").Server(app);
 const PORT = process.env.PORT || 5000;
-const dataUtil = require('./data-util');
 
 
 app.use(logger("dev"));
@@ -18,23 +17,11 @@ app.use("/public", express.static("public"));
 
 
 app.get("/", function(req, res) {
-    res.render("home", {
-        data: dataUtil.latest()
-    });
+    res.render("home");
 })
 
 app.get("/work", function(req, res) {
     res.render("work");
-})
-
-app.get("/projects", function(req, res) {
-    res.render("projects");
-})
-
-app.get("/writing", function(req, res) {
-    res.render("writing", {
-        data: dataUtil.allData()
-    });
 })
 
 app.get("/api/me", function(req, res) {

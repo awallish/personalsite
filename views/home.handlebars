@@ -6,37 +6,7 @@
     </div>
 </div>
 
-
-
-<div class="separator blue-text"><h3>Recent Stuff</h3></div>
-<div class="container">
-    <div class="py-3 px-5 card-deck" id="latest-work">
-
-        {{# each data}}
-        <div class="card">
-            <img src={{this.thumbnail}} class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{this.title}}</h5>
-                <div class="row">
-                    <div class="col">
-                        <p class="card-text">{{this.type}}</p>
-                    </div>
-                    <div class="col">
-                        <p class="card-text text-right">{{this.date}}</p>
-                    </div>
-                </div>
-                <a href={{this.href}} class="stretched-link"></a>
-            </div>
-        </div>
-        {{/each}}
-    </div>
-</div>
-
-
-
-
 <canvas class="background"></canvas>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 <script src="/public/js/home.js"></script>

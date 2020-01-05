@@ -92,3 +92,8 @@ a.page-link:link {
 .my-card img{
     align
 }
+
+a {
+    position: relative;
+    z-index: 9999;
+}

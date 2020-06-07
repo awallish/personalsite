@@ -1,12 +1,251 @@
-<div class="container blue-text" id="main-content">
-    <div class="py-5 px-3" id="home-text">
-        <h1 class="pt-5 px-3">Hi, I'm Alex.</h1>
-        <h3 class="py-3 px-5">I'm a developer and product person.</h3>
-        <h3 class="px-5">If you're working on something exciting, let's talk.</h3>
+<br>
+<div class="uk-container uk-container-large">
+    <h1 class="uk-text-primary">Hi, I'm Alex.</h1>
+</div>
+
+<div class="uk-container uk-container-xsmall uk-margin-small">
+    <h4 class="uk-text-primary uk-margin-small">I'm a software engineer.</h4>
+    <h4 class="uk-text-primary uk-margin-small">I currently work at Qualtrics.</h4>
+    <h4 class="uk-text-primary uk-margin-small">I used to work at Tesla, Belvedere Trading, and Barclays.</h4>
+    <h4 class="uk-text-primary uk-margin-small">I'm most experienced in Python, followed by C++, Rust, and JavaScript.</h4>
+    <h4 class="uk-text-primary uk-margin-small">I'm a big fan of graph databases.</h4>
+    <h4 class="uk-text-primary uk-margin-small">I work on a lot of projects in my free time. Some notable ones are <a
+            class="uk-text-bold" href="https://techinternship.io">techinternship.io</a> and <a class="uk-text-bold" href="https://matchbox.vc">Matchbox.VC</a>.
+    </h4>
+    <h4 class="uk-text-primary uk-margin-small">I play a lot of <a class="uk-text-bold" href="/poker">poker</a> in my free time.</h4>
+</div>
+
+
+<hr class="uk-divider-icon">
+
+<div class="uk-container uk-container-large">
+    <h2 class="uk-text-primary">Work Experience</h2>
+</div>
+
+
+<div class="uk-container uk-container-small uk-margin">
+    <div class="uk-card uk-card-secondary uk-width-1-1@m">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="/public/css/images/qualtrics.png">
+                </div>
+                <div class="uk-width-expand">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">Qualtrics</h3>
+                    <p class="uk-text-meta uk-margin-remove-top">Software Engineer Intern</p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <div class="uk-card-badge uk-label">Summer 2020</div>
+            <p>Working on the dashboards team to help make data visualization more interactive.</p>
+        </div>
     </div>
 </div>
 
-<canvas class="background"></canvas>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-<script src="/public/js/home.js"></script>
+<div class="uk-container uk-container-small uk-margin">
+    <div class="uk-card uk-card-secondary uk-width-1-1@m">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="/public/css/images/tesla.png">
+                </div>
+                <div class="uk-width-expand">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">Tesla</h3>
+                    <p class="uk-text-meta uk-margin-remove-top">Software Engineer Intern</p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <div class="uk-card-badge uk-label">Spring 2020</div>
+            <p>Helped build software that would accelerate the world's transition to sustainable energy.</p>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">Read More</a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list uk-list-square">
+                            <li>Added a background queue that spun off threads for processing longer running tasks triggered by a Flask app.</li>
+                            <li>Introduced websockets into Flask app to give users visibility into what is happening on background threads.</li>
+                            <li>Proposed and led an effort to store data in a graph database instead of an SQL database. This allowed for a much more robust search experience and reduced search times from seconds to milliseconds for users.</li>
+                            <li>Added an admin portal to the Flask app for viewing system logs, managing application metadata, and pulling in new data.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="uk-container uk-container-small uk-margin">
+    <div class="uk-card uk-card-secondary uk-width-1-1@m">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="/public/css/images/belvedere.png">
+                </div>
+                <div class="uk-width-expand">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">Belvedere Trading</h3>
+                    <p class="uk-text-meta uk-margin-remove-top">Software Engineer Intern</p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <div class="uk-card-badge uk-label">Winter 2020</div>
+            <p>Developed an exchange simulator in C++ built to mimic the ARCA options exchange.</p>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">Read More</a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list uk-list-square">
+                            <li>Developed an exchange simulator in C++ built to mimic the ARCA options exchange.</li>
+                            <li>Implemented a system for reading binary protocol messages from clients and parsing them into meaningful messages.</li>
+                            <li>Spun off multiple processes and threads to handle connections from many clients at once.</li>
+                            <li>Implemented an order book and matching engine according to the ARCA spec.</li>
+                            <li>Learned the fundamentals of how the firm models and prices options.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="uk-container uk-container-small uk-margin">
+    <div class="uk-card uk-card-secondary uk-width-1-1@m">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="/public/css/images/barclays.jpg">
+                </div>
+                <div class="uk-width-expand">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">Barcalys Investment Bank</h3>
+                    <p class="uk-text-meta uk-margin-remove-top">Software Engineer Intern</p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <div class="uk-card-badge uk-label">Summer 2019</div>
+            <p>Built software for researchers.</p>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">Read More</a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list uk-list-square">
+                            <li>Built a web app to simplify compliance workflow for researchers.</li>
+                            <li>Built a REST service for consuming and processing multiple internal API's.</li>
+                            <li>Built a frontend for visualizing data from researcher's publications, and generating and editing compliance reports from the data.</li>
+                            <li>Deployed app on an AWS instance.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<hr class="uk-divider-icon">
+
+<div class="uk-container uk-container-large">
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m uk-text-center uk-grid-divider" uk-grid>
+
+
+        <div>
+            <h2 class="uk-text-primary">Languages</h2>
+            <ul class="uk-list">
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Python</h3>
+                        <div class="Stars uk-text-left" style="--rating: 5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">C/C++</h3>
+                        <div class="Stars uk-text-left" style="--rating: 4;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">JavaScript</h3>
+                        <div class="Stars uk-text-left" style="--rating: 4;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Rust</h3>
+                        <div class="Stars uk-text-left" style="--rating: 3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="uk-text-primary">Tech</h2>
+            <ul class="uk-list">
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Git</h3>
+                        <div class="Stars uk-text-left" style="--rating: 5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Unix</h3>
+                        <div class="Stars uk-text-left" style="--rating: 5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Flask</h3>
+                        <div class="Stars uk-text-left" style="--rating: 5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">SQL</h3>
+                        <div class="Stars uk-text-left" style="--rating: 4;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Postgres</h3>
+                        <div class="Stars uk-text-left" style="--rating: 4;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Neo4j</h3>
+                        <div class="Stars uk-text-left" style="--rating: 4;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">Dynamodb</h3>
+                        <div class="Stars uk-text-left" style="--rating: 4;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">NumPy</h3>
+                        <div class="Stars uk-text-left" style="--rating: 3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <h3 class="uk-text-primary" style="display: inline;">SciPy</h3>
+                        <div class="Stars uk-text-left" style="--rating: 3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+    </div>
+</div>
+
+<hr class="uk-divider-icon">

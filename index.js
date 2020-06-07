@@ -20,52 +20,9 @@ app.get("/", function(req, res) {
     res.render("home");
 })
 
-app.get("/work", function(req, res) {
-    res.render("work");
+app.get("/poker", function(req, res) {
+    res.render("poker");
 })
-
-app.get("/api/me", function(req, res) {
-    res.send({
-        "name": "Alex Wallish",
-        "headline": "Software engineer",
-        "about": "I a software engineer with three years of experience.",
-        "pronouns": "He / Him / His",
-        "openToOpportunities": true,
-        "skills": [
-            "python",
-            "java",
-            "javascript",
-            "node",
-            "flask",
-            "spring",
-            "machine learning",
-        ],
-        "education" : [
-            {
-                "name": "University of Maryland",
-                "startMonth": 8,
-                "start-year": 2017,
-                "endMonth": 5,
-                "endYear": 2021,
-                "currentlyEnrolled": true,
-                "degreeType": "bachelor's",
-                "major": "Computer Science",
-                "GPA": 3.7
-            }
-        ],
-        "work": [
-            {
-                "company": "Barclays Investment Bank",
-                "role": "Software Engineering Intern",
-                "startMonth": 6,
-                "startYear": 2019,
-                "description": "Worked on the research team to develop tools for researchers to use to better understand the markets.",
-            }
-        ]
-    })
-})
-
-
 
 http.listen(PORT, function() {
     console.log("Listening on port " + PORT);

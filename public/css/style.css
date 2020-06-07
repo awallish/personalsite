@@ -1,99 +1,26 @@
-.navbar-custom {
-    background-color: #222222;
-    z-index: 1;
-}
 
-.nav-elem {
-    font-family: monospace;
-    font-size: 20px;
-}
-
-a.non-underline:hover { text-decoration: none;}
-
-a.nav-elem:link { color:#297bff; text-decoration:none; font-weight:normal; }
-a.nav-elem:visited { color: #297bff; text-decoration:none; font-weight:normal; }
-a.nav-elem:hover { color: #297bff; text-decoration:none; font-weight:bold; }
-a.nav-elem:active { color: #297bff; text-decoration:none; font-weight:normal; }
 
 body {background-color: #000000;}
 
-.separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-.separator::before, .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #297bff;
-}
-.separator::before {
-    margin-right: 2%;
-    margin-left: 10%;
-}
-.separator::after {
-    margin-left: 2%;
-    margin-right: 10%;
-}
-#main-content {
-    height: 75vh;
-}
-.footer {
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
- }
- .background {
-     position: absolute;
-     display: block;
-     top: 0;
-     left: 0;
-     z-index: 0;
- }
- .blue-text {
-     color: #297bff;
-     font-family: monospace;
- }
 
- #home-text {
-     z-index: 1;
- }
+:root {
+    --star-size: 25px;
+    --star-color: #fff;
+    --star-background: #4091D2;
+}
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+}
+.Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
 
-.card {
-    z-index: 1;
-}
-.stretched-link::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: auto;
-    content: "";
-    background-color: rgba(0,0,0,0);
-}
-
-/* work styling */
-a.page-link:link {
-    color: white;
-    float: right;
-}
-.my-card {
-    border: thin;
-    border-color: #297bff;
-    border-width: 2px;
-    border-style: ridge;
-    border-radius: 10px;
-}
-.my-card img{
-    align
-}
-
-a {
-    position: relative;
-    z-index: 9999;
-}

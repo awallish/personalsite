@@ -14,6 +14,7 @@
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
 
+
   <script>
     // set the dimensions and margins of the graph
     var margin = {
@@ -44,49 +45,52 @@
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-    d3.csv("https://raw.githubusercontent.com/awallish/personalsite/master/poker.csv", function(data) {
-        console.log(data);
-        var svg = d3.select("body").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
 
-        // format the data
-        data.forEach(function(d) {
-        d.date = parseTime(d.date);
-        d.profit = +d.profit;
-        });
+    var data = JSON.parse('{{data}}'.replace(/&quot;/g,'"'));
+    
+    var svg = d3.select("body").append("svg")
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("viewBox", )
+    .append("g")
+    .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
 
-        // Scale the range of the data
-        x.domain(d3.extent(data, function(d) {
-        return d.date;
-        }));
-        y.domain([d3.min(data, function(d) {return d.profit}), d3.max(data, function(d) {
-        return d.profit;
-        })]);
-
-        // Add the valueline path.
-        svg.append("path")
-        .data([data])
-        .attr("class", "line")
-        .attr("d", valueline)
-        .style("fill", "none")
-        .style("stroke", "steelblue");
-
-        // Add the X Axis
-        var axis = svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x));
-
-        make_silver(axis);
-
-        // Add the Y Axis
-        var axis = svg.append("g")
-        .call(d3.axisLeft(y));
-        make_silver(axis);
+    // format the data
+    var cum = 0;
+    data.forEach(function(d) {
+    cum = cum + +d.profit;
+    d.date = parseTime(d.date);
+    d.profit = cum;
     });
+
+    // Scale the range of the data
+    x.domain(d3.extent(data, function(d) {
+    return d.date;
+    }));
+    y.domain([d3.min(data, function(d) {return d.profit - 10}), d3.max(data, function(d) {
+    return d.profit + 10;
+    })]);
+
+    // Add the valueline path.
+    svg.append("path")
+    .data([data])
+    .attr("class", "line")
+    .attr("d", valueline)
+    .style("fill", "none")
+    .style("stroke", "steelblue");
+
+    // Add the X Axis
+    var axis = svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
+
+    make_silver(axis);
+
+    // Add the Y Axis
+    var axis = svg.append("g")
+    .call(d3.axisLeft(y));
+    make_silver(axis);
 
 function make_silver(axis) {
     axis.selectAll("line")
@@ -98,7 +102,9 @@ function make_silver(axis) {
     axis.selectAll("text")
       .style("stroke", "silver")
 }
+
   </script>
 
 
 
+<h1 class="uk-text-primary">hello there</h1>
